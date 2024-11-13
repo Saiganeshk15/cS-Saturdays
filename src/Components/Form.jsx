@@ -69,7 +69,7 @@ export default function Form() {
     try {
       if (form.validate()) {
         setVisible(true);
-        const coll = collection(db, "users");
+        const coll = collection(db, "cS-Saturdays");
         console.log("in submit");
         const q1 = query(coll, where("roll", "==", form.values.roll));
         const q2 = query(coll, where("email", "==", form.values.email));
